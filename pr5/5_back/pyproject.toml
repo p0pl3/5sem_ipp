@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "contact-list"
+version = "0.1.0"
+description = ""
+authors = ["rom.sinitsyn <rom.sinitsyn@x5.ru>"]
+readme = "README.md"
+packages = [{include = "contact_list"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "^4.2.5"
+django-cors-headers = "^4.2.0"
+djangorestframework = "^3.14.0"
+drf-spectacular = "^0.26.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

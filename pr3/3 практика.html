@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <title>Карскас страницы с погодой</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var settings = {
+            "url": "https://api.openweathermap.org/data/2.5/onecall?lat=44.34&lon=10.99&cnt=7&appid=92a0d980c24de5bedafea8481a018ed5",
+            "method": "GET",
+            "timeout": 0,
+        };
+
+        $.ajax(settings).done(function(response) {
+            var temp = response.current.temp;
+            console.log(response)
+            $("#Temp").append(temp);
+            $("#pressure").append(response.current.pressure)
+            $("#wind_speed").append(response.current.wind_speed)
+            $("#max_t").append(response.daily[0].temp.max)
+            $("#min_t").append(response.daily[0].temp.min)
+
+        });
+    </script>
+</head>
+<body>
+<h1 style='align-items: center;'>Страница с погодой</h1>
+
+	Темература: <span id="Temp"></span> <br/>
+	Давление"" <span id="pressure"></span> <br/>
+	Скорость ветра: <span id="wind_speed"></span><br/>
+	Максимальная темература: <span id="max_t"></span><br/>
+	Минимальная температура: <span id="min_t"></span>
+</body>
+</html>

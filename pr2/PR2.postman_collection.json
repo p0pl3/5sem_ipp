@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "841f922a-10df-4b24-a334-71ac32b963d7",
+		"name": "PR2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 Получение всех валют",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.currencylayer.com/list?access_key=56b9252eb45ddfc965b8f8764319fa1a",
+					"protocol": "http",
+					"host": [
+						"api",
+						"currencylayer",
+						"com"
+					],
+					"path": [
+						"list"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "56b9252eb45ddfc965b8f8764319fa1a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 EUR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.currencylayer.com/historical?access_key=56b9252eb45ddfc965b8f8764319fa1a&date=2018-02-22&source=USD&currencies=EUR",
+					"protocol": "http",
+					"host": [
+						"api",
+						"currencylayer",
+						"com"
+					],
+					"path": [
+						"historical"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "56b9252eb45ddfc965b8f8764319fa1a"
+						},
+						{
+							"key": "date",
+							"value": "2018-02-22"
+						},
+						{
+							"key": "source",
+							"value": "USD"
+						},
+						{
+							"key": "currencies",
+							"value": "EUR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 GBP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.currencylayer.com/historical?access_key=56b9252eb45ddfc965b8f8764319fa1a&date=2018-02-22&source=USD&currencies=GBP",
+					"protocol": "http",
+					"host": [
+						"api",
+						"currencylayer",
+						"com"
+					],
+					"path": [
+						"historical"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "56b9252eb45ddfc965b8f8764319fa1a"
+						},
+						{
+							"key": "date",
+							"value": "2018-02-22"
+						},
+						{
+							"key": "source",
+							"value": "USD"
+						},
+						{
+							"key": "currencies",
+							"value": "GBP"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 JPY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.currencylayer.com/historical?access_key=56b9252eb45ddfc965b8f8764319fa1a&date=2018-02-22&source=USD&currencies=JPY",
+					"protocol": "http",
+					"host": [
+						"api",
+						"currencylayer",
+						"com"
+					],
+					"path": [
+						"historical"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "56b9252eb45ddfc965b8f8764319fa1a"
+						},
+						{
+							"key": "date",
+							"value": "2018-02-22"
+						},
+						{
+							"key": "source",
+							"value": "USD"
+						},
+						{
+							"key": "currencies",
+							"value": "JPY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.currencylayer.com/timeframe?access_key=56b9252eb45ddfc965b8f8764319fa1a&currencies=USD,GBP,EUR&start_date=2010-03-01&end_date=2010-04-01",
+					"protocol": "https",
+					"host": [
+						"api",
+						"currencylayer",
+						"com"
+					],
+					"path": [
+						"timeframe"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "56b9252eb45ddfc965b8f8764319fa1a"
+						},
+						{
+							"key": "currencies",
+							"value": "USD,GBP,EUR"
+						},
+						{
+							"key": "start_date",
+							"value": "2010-03-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2010-04-01"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
